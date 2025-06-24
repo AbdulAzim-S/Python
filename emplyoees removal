@@ -1,0 +1,18 @@
+names = ["ham","ash","abd","siv","irf"]
+memo = [1,1,2,3,0]
+sal = [20,30,10,50,45]
+data =list(zip(names,memo,sal))
+removed = [ i for i in data if i[2]>30]
+rem = [ i for i in data if i[2]<=30]
+rem.sort(key=lambda x:x[2],reverse=True)
+to_removed = []
+for i in rem:
+   if(i[1]>1):
+      to_removed.append(i)
+   if(len(to_removed)==3):
+      break
+res = removed+to_removed
+print("result")
+pos=1
+print("{}.{} is removed and salary is {} and memo is {}".format(pos,i[0],i[2],i[1]))
+pos=pos+1
