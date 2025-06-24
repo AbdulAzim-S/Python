@@ -1,0 +1,14 @@
+s=[
+     {"name": "ashwin", "marks": [30,68,90,83]},
+     {"name": "hamjath", "marks": [40,70,67,96]}
+]
+for i in s:
+    t=sum(i["marks"])
+    a=t//4
+    i["percent"]=a
+s.sort(key=lambda x:x["percent"],reverse=True)
+p=["first","second"]
+j=0 
+for i in s:
+    print("{} scored {}% -> stands {}".format(i["name"],i["percent"],p[j]))
+    j=j+1
