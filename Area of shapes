@@ -1,0 +1,33 @@
+def circle():
+    r=int(input("radius"))
+    print("area",3.14*r*r)
+def sq(a):
+    print("area",a*a)
+def rec():
+    l=int(input("length"))
+    b=int(input("breadth"))
+    return l*b
+def tri(a,b):
+    return 0.5*a*b
+while(True):
+    print("1.cir")
+    print("2.sq")
+    print("3.rec")
+    print("4.tri")
+    ip=int(input("choice"))
+    match ip:
+        case 1:
+            circle()
+        case 2:
+            a=int(input("side"))
+            sq(a)
+        case 3:
+            res=rec()
+            print("area",res)
+        case 4:
+            a=int(input("base"))
+            b=int(input("height"))
+            res=tri(a,b)
+            print("area",res)
+        case _:
+            break
