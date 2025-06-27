@@ -1,0 +1,19 @@
+class Rec:
+    def set_dim(self,a,b):
+        self.a=a
+        self.b=b
+    def area(self):
+        return self.a*self.b
+        
+l=[]
+ch=int(input("no of rec"))
+for i in range(ch):
+    r=Rec()
+    a=int(input("enter length"))
+    b=int(input("enter breadth"))
+    r.set_dim(a,b)
+    l.append(r)
+print("..........")
+for i in l:
+    print("area is",i.area())
+    print("----------")
