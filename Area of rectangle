@@ -15,5 +15,4 @@ for i in range(ch):
     l.append(r)
 print("..........")
 for i in l:
-    print("area is",i.area())
-    print("----------")
+   
